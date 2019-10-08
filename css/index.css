@@ -1,0 +1,61 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #EEC218;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 1px;}
+  }
+
+/* Style page content */
+main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+}
+
+/* Search box */
+.search-box {
+    background-image: url(/img/Toronto.png);
+    background-size: 100%;
+}
+
+/* Totonto Travel Images */
+.toronto-showcase {
+    list-style: none;
+    width: 100%;
+}
+.toronto-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.toronto-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
