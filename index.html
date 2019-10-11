@@ -5,120 +5,602 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Expedia</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Expedia|Get the cheapest flight ticket to Toronto</title>
 </head>
 <body>
     <!-- Side Nav bar -->
     <header>
         <nav>
-            <div class="sidenav">
+            <section class="sidenav">
                 <img src="img/expedia logo.png" alt="Expedia Logo" width="160px">
-                <img src="img/user profile.svg" alt="user profile">
-                <ul>
-                    <li><a href="#">Flights</a></li>
-                    <li><a href="#">Hotels</a></li>
-                    <li><a href="#">Cars</a></li>
-                    <li><a href="#">Flight + Hotel</a></li>
-                    <li><a href="#">All Include</a></li>
-                    <li><a href="#">Vacational Rental</a></li>
-                    <li><a href="#">Cruise</a></li>
-                    <li><a href="#">All Travel</a></li>
-                </ul>
-            </div>
+                <div class="menu">
+                    <div class="menu-icon">
+                        <img class="icon" src="/img/flight-logo.svg" alt="flight icon" width="70%">
+                        <img class="icon" src="/img/hotel-logo.svg" alt="hotel icon" width="70%">
+                        <img class="icon" src="/img/car-logo.svg" alt="car icon" width="80%">
+                        <img class="icon" src="/img/rental-logo.svg" alt="house rental icon" width="80%">
+                        <img class="icon" src="/img/cruise-logo.svg" alt="cruise icon">
+                        <img class="icon all-travel" src="/img/travel-logo.svg" alt="travel icon" width="83%">
+                    </div>
+                    <div class="menu-text">
+                        <ul>
+                            <li><a href="#">Flights</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Cars</a></li>
+                            <li><a href="#">Vacational Rental</a></li>
+                            <li><a href="#">Cruise</a></li>
+                            <li><a href="#">All Travel</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="user">
+                    <img src="img/user profile.svg" alt="user profile">
+                    <p>Liam Hemsworth</p>
+                    <a href="#">My Booking</a>
+                </div>
+            </section>
         </nav>
     </header>
+
     <!-- Search Box -->
     <main>
-        <div class="search-box">
-            <ul>
-                <li>Toronto, CA</li>
-                <li>18-25 Aug</li>
-                <li>2 guests</li>
-                <li>Filters</li>
-            </ul>
-        </div>
+        <section class="search">
+            <!-- <div class="btn pick-up">
+                <p>Toronto, CA</p>
+            </div>
+            <div class="btn drop-off">
+                <p>Vancouver, CA</p>
+            </div>
+            <div class="btn date">
+                <p>18 - 25 OCT</p>
+            </div>
+            <div class="btn search-box">
+                <p>search</p>
+            </div> -->
+            <button class="btn pick-up">Toronto, CA</button>
+            <button class="btn drop-off">Vancouver, CA</button>
+            <button class="btn date">18 - 25 OCT</button>
+            <button class="btn search-box">search</button>
+        </section>
+
+    <!-- Filter -->
+        <section class="filter">
+            <div class="review-filter">
+                <h2>Customer reviews</h2>
+                <div class="customer-satisfaction">
+                    <input type="checkbox" name="satisfaction">
+                    <label for="satisfaction">⭐️⭐️⭐️⭐️⭐️</label>
+                </div>
+                <div class="customer-satisfaction">
+                    <input type="checkbox" name="satisfaction">
+                    <label for="satisfaction">⭐️⭐️⭐️⭐️</label>
+                </div>
+                <div class="customer-satisfaction">
+                    <input type="checkbox" name="satisfaction">
+                    <label for="satisfaction">⭐️⭐️⭐️</label>
+                </div>
+                <div class="customer-satisfaction">
+                    <input type="checkbox" name="satisfaction">
+                    <label for="satisfaction">⭐️⭐️</label>
+                </div>
+                <div class="customer-satisfaction">
+                    <input type="checkbox" name="satisfaction">
+                    <label for="satisfaction">⭐️</label>
+                </div>
+            </div>
+
+            <div class="car-type">
+                <h2>Car type</h2>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Economy (22)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Compact (25)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Midsize (21)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Standard (25)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Full-size (22)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Premium (31)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Luxury (13)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Minivan (22)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">SUV (77)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Van (1)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Pickup (5)</label>
+                </div>
+                <div class="car-filter">
+                    <input type="checkbox" name="car">
+                    <label for="car">Other (32)</label>
+                </div>
+            </div>
+
+            <div class="total-price">
+                <h2>Total price</h2>
+                <div class="price-filter">
+                    <input type="checkbox" name="price">
+                    <label for="price">Less than CA $75 (119)</label>
+                </div>
+                <div class="price-filter">
+                    <input type="checkbox" name="price">
+                    <label for="price">CA $75 to CA $99 (83)</label>
+                </div>
+                <div class="price-filter">
+                    <input type="checkbox" name="price">
+                    <label for="price">CA $100 to CA $199 (52)</label>
+                </div>
+                <div class="price-filter">
+                    <input type="checkbox" name="price">
+                    <label for="price">CA $200 to CA $299 (14)</label>
+                </div>
+                <div class="price-filter">
+                    <input type="checkbox" name="price">
+                    <label for="price">Greater than CA $300 (7)</label>
+                </div>
+            </div>
+        </section>
     
-    <!-- Hotel Recommendation -->
-        <section class="our-pick">
-            <h3>Our top picks</h3>
-            <div class="recommended-hotel one">
-                <img src="" alt="">
-                <h4>Hotel X Toronto by Library Hotel Collection</h4>
-                <p>CA $284/night</p>
-            </div>
-            <div class="recommended-hotel two">
-                <img src="" alt="">
-                <h4>Hotel X Toronto by Library Hotel Collection</h4>
-                <p>CA $284/night</p>
-            </div>
-            <div class="recommended-hotel three">
-                <img src="" alt="">
-                <h4>Hotel X Toronto by Library Hotel Collection</h4>
-                <p>CA $284/night</p>
-            </div>
-            <div class="recommended-hotel four">
-                <img src="" alt="">
-                <h4>Hotel X Toronto by Library Hotel Collection</h4>
-                <p>CA $284/night</p>
-            </div>
-        </section>>
-
-    <!-- Totonto Travel Images -->
+    <!-- Flight Search Result -->
         <section>
-            <ul class="toronto-showcase">
-                <li>
-                    <div class="toronto-photo">
-                        <img src="img/toronto1.jpg" alt="">
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="img/toronto2.jpg" alt="">
+                    <div class="result-tag result-tag-1">
+                        #great deal
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="img/toronto3.jpg" alt="">
+                    <div class="reault-tag result-tag-2">
+                        #recommended
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="img/toronto4.jpg" alt="">
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
                     </div>
-                </li>
-            </ul>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
 
-            <ul class="toronto-showcase">
-                <li>
-                    <div class="toronto-photo">
-                        <img src="" alt="">
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="" alt="">
+                    <div class="result-tag result-tag-1">
+                        #great deal
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="" alt="">
+                    <div class="reault-tag result-tag-2">
+                        #recommended
                     </div>
-                </li>
-                <li>
-                    <div class="toronto-photo">
-                        <img src="" alt="">
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
                     </div>
-                </li>
-            </ul>
-        </section>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
 
-        <section class="search-result">
-            <p>Sorted:</p>
-        </section>
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
 
-        <section class="downloading-app">
-            
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
+
+            <figure class="search-result one">
+                <div class="result-img">
+                    <img src="/img/car1.jpg" alt="black Ford Mustang GT" class="car-image">
+                </div>
+                <div class="result-content">
+                    <div class="result-title">
+                        <h1 class="result-heading">Ford Mustang GT</h1>
+                    </div>
+                    <div class="result-tag result-tag-1">
+                        #great deal
+                    </div>
+                    <div class="reault-tag result-tag-2">
+                        #recommended
+                    </div>
+                    <p class="result-description">
+                        Free cancellation up to 6 hours before pick-up
+                    </p>
+                    <p class="result-description">
+                        Earn Expedia Rewards points
+                    </p>
+                    <div class="result-details">
+                        <p class="result-detail">
+                            <span class="emoji">👨‍👩‍</span>
+                            2 persons
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">💼</span>
+                            2 bags
+                        </p>
+                        <p class="result-detail">
+                            <span class="emoji">⭐️</span>
+                            4.7 / 5
+                        </p>
+                    </div>
+                </div>
+                <div class="result-price">
+                    C$50
+                    per day
+                </div>
+            </figure>
         </section>
     </main>
+
+    <footer>
+        <div class="footer left">
+            <ul class="footer-nav">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">iOS App</a></li>
+                <li><a href="#">Android App</a></li>
+            </ul>
+        </div>
+
+        <div class="footer right">
+            <ul class="social-links">
+                <li><a href="#"><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-googleplus" class="logo-googleplus"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram" class="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
