@@ -18,7 +18,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #EEC218;
+    background-image: linear-gradient(to bottom, #67b26f, #4ca2cd);
     overflow-x: hidden;
     padding-top: 1.25em;
 }
@@ -27,12 +27,12 @@
     padding: 0.375em 0.5em 0.375em 1em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: white;
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: black;
 }
 
 .menu {
@@ -44,6 +44,14 @@
 .menu-text li{
     margin: 1.5em 0;
     list-style: none;
+}
+
+.menu-icon a {
+    padding: 0;
+}
+
+.menu-icon a:hover {
+    color: #f1f1f1;
 }
 
 .icon {
@@ -106,7 +114,7 @@ footer {
 
 /* Filters */
 .review-filter, .car-type, .total-price {
-    max-width: 50em;
+    max-width: 30em;
     border-radius: 0.25em;
     overflow: hidden;
     box-shadow: 0 1.875em 5em 0.625em rgba(0,0,0,.2);
@@ -123,11 +131,14 @@ footer {
 
 .filter-title {
     background-image: linear-gradient(-90deg,#67b26f,#4ca2cd);
+    margin:0;
+    padding:0;
+    width: 100%;
 }
 
 /* Result box */
 .search-result {
-    max-width: 50em;
+    max-width: 30em;
     border-radius: 0.25em;
     overflow: hidden;
     box-shadow: 0 1.875em 5em 0.625em rgba(0,0,0,.2);
@@ -144,6 +155,7 @@ footer {
 
 .car-image {
     width: 100%;
+    height: 100%;
     display: block
 }
 
@@ -269,4 +281,12 @@ footer {
 
 .logo-instagram:hover {
     color: #517fa4;
+}
+
+/* Media query */
+@media only screen and (max-width: 30em) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
