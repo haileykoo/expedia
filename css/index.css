@@ -11,8 +11,9 @@
 
 /* The sidebar menu */
 .expedia, .small-logo {
-    margin: 0;
-    padding: 0;
+    margin-top: 2em;
+    padding: 0 0.5em;
+    text-align: center;
 }
 
 .sidenav {
@@ -36,7 +37,7 @@
 }
 
 .sidenav a:hover {
-    color: #EEC218;
+    color: #3F59A8;
 }
 
 .hamburger {
@@ -52,7 +53,8 @@
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2.5em 0 3.5em 0;
+    margin: 1em 0 3.5em 0;
+    text-align: center;
 }
 
 .menu-icon li{
@@ -94,7 +96,7 @@ footer {
 
 .btn {
     height: 3em;
-    border: 1px #EEC218 solid;
+    border: 1px #3F59A8 solid;
     border-radius: 0.25em;
     overflow: hidden;
     text-align: center;
@@ -105,12 +107,12 @@ footer {
 }
 
 .btn:hover {
-    color: #EEC218;
+    color: #3F59A8;
 }
 
 .search-box {
-    background-color: #EEC218;
-    color:black;
+    background-color: #3F59A8;
+    color: white;
 }
 
 .search-box:hover {
@@ -155,7 +157,6 @@ footer {
     box-shadow: 0 1.875em 5em 0.625em rgba(0,0,0,.2);
     background-color: white;
     margin-bottom: 0.5em;
-    margin-left: 0.5em;
   
     display: flex;
     align-items: stretch;
@@ -238,7 +239,7 @@ footer {
 
 /* Footer */
 .footer {
-    background-color: #333333;
+    background-color: #3F59A8;
     padding: 3.125em;
 }
 
@@ -264,14 +265,14 @@ footer {
 .social-links li a:visited {
     text-decoration: none;
     border: 0;
-    color: #888;
+    color: white;
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-    color: #ddd;
+    color: rgb(0, 0, 0);
 }
 
 .social-links li a:link,
@@ -317,6 +318,7 @@ footer {
         text-align: left;
         font-size: 0.8em;
     }
+}
 
 @media only screen and (min-width: 50em) {
     .sidenav {
@@ -341,5 +343,8 @@ footer {
     .body-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .search-result {
+        margin-left: 0.5em;
     }
 }
