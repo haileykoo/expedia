@@ -284,9 +284,35 @@ footer {
 }
 
 /* Media query */
-@media only screen and (max-width: 30em) {
+@media only screen and (min-width: 20em) {
+    .sidenav {
+        width: 5em;
+        display: block;
+    }
+    main {
+        margin-left: 5em;
+    }
+    footer {
+        margin-left: 5em;
+    }
     .menu {
-        display: grid;
         grid-template-columns: 1fr;
+    }
+    .menu-icon {
+        width: 80%;
+    }
+    .menu-text {
+        display: none;
+    }
+    .expedia {
+        display: none;
+    }
+}
+@media only screen and (min-width: 50em) {
+    .menu-text {
+        display: block;
+    }
+    .small-logo {
+        display: none;
     }
 }
