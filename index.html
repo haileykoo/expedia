@@ -7,41 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <title>Expedia|Get the cheapest flight ticket to Toronto</title>
+    <title>Expedia | Get the cheapest flight ticket to Toronto</title>
 </head>
 <body>
     <!-- Side Nav bar -->
     <header>
         <nav>
             <section class="sidenav">
+                <button class="hamburger">=</button>
                 <div class="expedia">
                     <img src="img/expedia logo.png" alt="Expedia Logo" width="100%">
                 </div>
                 <div class="small-logo">
-                    <img src="img/small-logo.png" alt="Expedia small logo" width="60%">
+                    <img src="img/small-logo.png" alt="Expedia small logo" width="100%">
                 </div>
 
                 <div class="menu">
                     <div class="menu-icon">
-                        <a href="#">
-                            <img class="icon" src="/img/flight-logo.svg" alt="flight icon" width="70%">
-                        </a>
-                        <a href="#">
-                            <img class="icon" src="/img/hotel-logo.svg" alt="hotel icon" width="70%">
-                        </a>
-                        <a href="#">
-                            <img class="icon" src="/img/car-logo.svg" alt="car icon" width="80%">
-                        </a>
-                        <a href="#">
-                            <img class="icon" src="/img/rental-logo.svg" alt="house rental icon" width="80%">
-                        </a>
-                        <a href="#">
-                            <img class="icon" src="/img/cruise-logo.svg" alt="cruise icon">
-                        </a>
-                        <a href="#">
-                            <img class="icon all-travel" src="/img/travel-logo.svg" alt="travel icon" width="83%">
-                        </a>
+                        <ul class="menu-icon">
+                            <li><a href="#"><ion-icon name="airplane" class="logo-flight"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="business" class="logo-hotel"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="car" class="logo-car"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="home" class="logo-rental"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="boat" class="logo-cruise"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="globe" class="logo-travel"></ion-icon></a></li>
+                        </ul>
                     </div>
+
                     <div class="menu-text">
                         <ul>
                             <li><a href="#">Flights</a></li>
@@ -73,520 +65,522 @@
         </section>
 
     <!-- Filter -->
-        <section class="filter">
-            <div class="review-filter">
-                <h1 class="filter-title">Customer reviews</h1>
-                <div class="customer-satisfaction">
-                    <input type="checkbox" name="satisfaction">
-                    <label for="satisfaction">⭐️⭐️⭐️⭐️⭐️</label>
+        <article class="body-grid">
+            <section class="filter">
+                <div class="review-filter">
+                    <h1 class="filter-title">Customer reviews</h1>
+                    <div class="customer-satisfaction">
+                        <input type="checkbox" name="satisfaction">
+                        <label for="satisfaction">⭐️⭐️⭐️⭐️⭐️</label>
+                    </div>
+                    <div class="customer-satisfaction">
+                        <input type="checkbox" name="satisfaction">
+                        <label for="satisfaction">⭐️⭐️⭐️⭐️</label>
+                    </div>
+                    <div class="customer-satisfaction">
+                        <input type="checkbox" name="satisfaction">
+                        <label for="satisfaction">⭐️⭐️⭐️</label>
+                    </div>
+                    <div class="customer-satisfaction">
+                        <input type="checkbox" name="satisfaction">
+                        <label for="satisfaction">⭐️⭐️</label>
+                    </div>
+                    <div class="customer-satisfaction">
+                        <input type="checkbox" name="satisfaction">
+                        <label for="satisfaction">⭐️</label>
+                    </div>
                 </div>
-                <div class="customer-satisfaction">
-                    <input type="checkbox" name="satisfaction">
-                    <label for="satisfaction">⭐️⭐️⭐️⭐️</label>
-                </div>
-                <div class="customer-satisfaction">
-                    <input type="checkbox" name="satisfaction">
-                    <label for="satisfaction">⭐️⭐️⭐️</label>
-                </div>
-                <div class="customer-satisfaction">
-                    <input type="checkbox" name="satisfaction">
-                    <label for="satisfaction">⭐️⭐️</label>
-                </div>
-                <div class="customer-satisfaction">
-                    <input type="checkbox" name="satisfaction">
-                    <label for="satisfaction">⭐️</label>
-                </div>
-            </div>
 
-            <div class="car-type">
-                <h1 class="filter-title">Car type</h1>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Economy (22)</label>
+                <div class="car-type">
+                    <h1 class="filter-title">Car type</h1>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Economy (22)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Compact (25)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Midsize (21)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Standard (25)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Full-size (22)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Premium (31)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Luxury (13)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Minivan (22)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">SUV (77)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Van (1)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Pickup (5)</label>
+                    </div>
+                    <div class="car-filter">
+                        <input type="checkbox" name="car">
+                        <label for="car">Other (32)</label>
+                    </div>
                 </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Compact (25)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Midsize (21)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Standard (25)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Full-size (22)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Premium (31)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Luxury (13)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Minivan (22)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">SUV (77)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Van (1)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Pickup (5)</label>
-                </div>
-                <div class="car-filter">
-                    <input type="checkbox" name="car">
-                    <label for="car">Other (32)</label>
-                </div>
-            </div>
 
-            <div class="total-price">
-                <h1 class="filter-title">Total price</h1>
-                <div class="price-filter">
-                    <input type="checkbox" name="price">
-                    <label for="price">Less than CA $75 (119)</label>
-                </div>
-                <div class="price-filter">
-                    <input type="checkbox" name="price">
-                    <label for="price">CA $75 to CA $99 (83)</label>
-                </div>
-                <div class="price-filter">
-                    <input type="checkbox" name="price">
-                    <label for="price">CA $100 to CA $199 (52)</label>
-                </div>
-                <div class="price-filter">
-                    <input type="checkbox" name="price">
-                    <label for="price">CA $200 to CA $299 (14)</label>
-                </div>
-                <div class="price-filter">
-                    <input type="checkbox" name="price">
-                    <label for="price">Greater than CA $300 (7)</label>
-                </div>
-            </div>
-        </section>
-    
-    <!-- Flight Search Result -->
-        <section>
-            <figure class="search-result one">
-                <div class="result-img">
-                    <img src="/img/Black ford_resize.jpg" alt="black Ford Mustang GT" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Ford Mustang GT</h1>
+                <div class="total-price">
+                    <h1 class="filter-title">Total price</h1>
+                    <div class="price-filter">
+                        <input type="checkbox" name="price">
+                        <label for="price">Less than CA $75 (119)</label>
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
+                    <div class="price-filter">
+                        <input type="checkbox" name="price">
+                        <label for="price">CA $75 to CA $99 (83)</label>
                     </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
+                    <div class="price-filter">
+                        <input type="checkbox" name="price">
+                        <label for="price">CA $100 to CA $199 (52)</label>
                     </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="price-filter">
+                        <input type="checkbox" name="price">
+                        <label for="price">CA $200 to CA $299 (14)</label>
+                    </div>
+                    <div class="price-filter">
+                        <input type="checkbox" name="price">
+                        <label for="price">Greater than CA $300 (7)</label>
+                    </div>
+                </div>
+            </section>
+        
+        <!-- Rent cars Search Result -->
+            <section>
+                <figure class="search-result one">
+                    <div class="result-img">
+                        <img src="/img/Black ford_resize.jpg" alt="black Ford Mustang GT" class="car-image">
+                    </div>
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Ford Mustang GT</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result two">
-                <div class="result-img">
-                    <img src="/img/BMW coupe_resize.jpg" alt="BMW Coupe" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">BMW Coupe</h1>
+                <figure class="search-result two">
+                    <div class="result-img">
+                        <img src="/img/BMW coupe_resize.jpg" alt="BMW Coupe" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">BMW Coupe</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result three">
-                <div class="result-img">
-                    <img src="/img/Discovery SUV_resize.jpg" alt="Discovery SUV" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Discovery SUV</h1>
+                <figure class="search-result three">
+                    <div class="result-img">
+                        <img src="/img/Discovery SUV_resize.jpg" alt="Discovery SUV" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Discovery SUV</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result four">
-                <div class="result-img">
-                    <img src="/img/Ferrari 458_resize.jpg" alt="Ferrari 458" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Ferrari 458</h1>
+                <figure class="search-result four">
+                    <div class="result-img">
+                        <img src="/img/Ferrari 458_resize.jpg" alt="Ferrari 458" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Ferrari 458</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result five">
-                <div class="result-img">
-                    <img src="/img/Ferrari F430_resize.jpg" alt="Ferrari F430" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Ferrari F430</h1>
+                <figure class="search-result five">
+                    <div class="result-img">
+                        <img src="/img/Ferrari F430_resize.jpg" alt="Ferrari F430" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Ferrari F430</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result six">
-                <div class="result-img">
-                    <img src="/img/Ford Explorer SUV_resize.jpg" alt="Ford Explorer SUV" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Ford Explorer SUV</h1>
+                <figure class="search-result six">
+                    <div class="result-img">
+                        <img src="/img/Ford Explorer SUV_resize.jpg" alt="Ford Explorer SUV" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Ford Explorer SUV</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result seven">
-                <div class="result-img">
-                    <img src="/img/Land Rover_resize.jpg" alt="Land Rover SUV" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Land Rover SUV</h1>
+                <figure class="search-result seven">
+                    <div class="result-img">
+                        <img src="/img/Land Rover_resize.jpg" alt="Land Rover SUV" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Land Rover SUV</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result eight">
-                <div class="result-img">
-                    <img src="/img/audi_resize.jpg" alt="Audi" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Audi</h1>
+                <figure class="search-result eight">
+                    <div class="result-img">
+                        <img src="/img/audi_resize.jpg" alt="Audi" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Audi</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result nine">
-                <div class="result-img">
-                    <img src="/img/gray SUV_resize.jpg" alt="Nissan SUV" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Nissan SUV</h1>
+                <figure class="search-result nine">
+                    <div class="result-img">
+                        <img src="/img/gray SUV_resize.jpg" alt="Nissan SUV" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Nissan SUV</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
 
-            <figure class="search-result ten">
-                <div class="result-img">
-                    <img src="/img/Volkswagen_resize.jpg" alt="Volkswagen" class="car-image">
-                </div>
-                <div class="result-content">
-                    <div class="result-title">
-                        <h1 class="result-heading">Volkswagen SUV</h1>
+                <figure class="search-result ten">
+                    <div class="result-img">
+                        <img src="/img/Volkswagen_resize.jpg" alt="Volkswagen" class="car-image">
                     </div>
-                    <div class="result-tag result-tag-1">
-                        #great deal
-                    </div>
-                    <div class="reault-tag result-tag-2">
-                        #recommended
-                    </div>
-                    <p class="result-description">
-                        Free cancellation up to 6 hours before pick-up
-                    </p>
-                    <p class="result-description">
-                        Earn Expedia Rewards points
-                    </p>
-                    <div class="result-details">
-                        <p class="result-detail">
-                            <span class="emoji">👨‍👩‍</span>
-                            2 persons
+                    <div class="result-content">
+                        <div class="result-title">
+                            <h1 class="result-heading">Volkswagen SUV</h1>
+                        </div>
+                        <div class="result-tag result-tag-1">
+                            #great deal
+                        </div>
+                        <div class="reault-tag result-tag-2">
+                            #recommended
+                        </div>
+                        <p class="result-description">
+                            Free cancellation up to 6 hours before pick-up
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">💼</span>
-                            2 bags
+                        <p class="result-description">
+                            Earn Expedia Rewards points
                         </p>
-                        <p class="result-detail">
-                            <span class="emoji">⭐️</span>
-                            4.7 / 5
-                        </p>
+                        <div class="result-details">
+                            <p class="result-detail">
+                                <span class="emoji">👨‍👩‍</span>
+                                2 persons
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">💼</span>
+                                2 bags
+                            </p>
+                            <p class="result-detail">
+                                <span class="emoji">⭐️</span>
+                                4.7 / 5
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-price">
-                    C$50
-                    per day
-                </div>
-            </figure>
-        </section>
+                    <div class="result-price">
+                        C$50
+                        per day
+                    </div>
+                </figure>
+            </section>
+        </article>
     </main>
 
     <footer>
