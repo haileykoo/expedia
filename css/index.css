@@ -11,8 +11,7 @@
 
 /* The sidebar menu */
 .expedia, .small-logo {
-    margin-top: 2em;
-    padding: 0 0.5em;
+    margin-top: 1.5em;
     text-align: center;
 }
 
@@ -25,11 +24,11 @@
     left: 0;
     background-image: linear-gradient(to bottom, #67b26f, #4ca2cd);
     overflow-x: hidden;
-    padding-top: 1.25em;
+    padding-top: 1em;
 }
 
 .sidenav a {
-    padding: 0.375em 0.5em 0.375em 1em;
+    padding: 0.375em 0.5em 0.375em 0.5em;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -53,7 +52,7 @@
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1em 0 3.5em 0;
+    margin: 1em 0 1em 0;
     text-align: center;
 }
 
@@ -69,8 +68,10 @@
 }
 
 .user {
-    text-align: left;
+    position: absolute;
+    bottom: 0;
 }
+
 .user a {
     padding: 0;
 }
@@ -101,6 +102,7 @@ footer {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+    background-color: white;
 
     color: #333333;
     transition: all 0.9s, color 0.3;
