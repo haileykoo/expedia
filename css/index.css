@@ -65,6 +65,7 @@
 .menu-text li{
     margin: 1.5em 0;
     list-style: none;
+    text-align: left;
 }
 
 .user {
@@ -352,6 +353,9 @@ footer {
     }
     .menu-text {
         display: none;
+    }
+    .menu-icon {
+        margin-left: 0.5em;
     }
     .expedia {
         display: none;
